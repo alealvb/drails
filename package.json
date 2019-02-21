@@ -1,0 +1,48 @@
+{
+  "name": "drails",
+  "description": "cli for docker compose and rails users",
+  "version": "0.0.0",
+  "author": "Alejandro Alvarez @alejoreact",
+  "bin": {
+    "drails": "./bin/run"
+  },
+  "bugs": "https://github.com/alejoreact/drails/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "shelljs": "^0.8.3",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@types/node": "^10",
+    "@types/shelljs": "^0.8.3",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/alejoreact/drails",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "drails"
+  },
+  "repository": "alejoreact/drails",
+  "scripts": {
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
