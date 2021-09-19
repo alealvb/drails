@@ -1,7 +1,7 @@
 {
   "name": "drails",
   "description": "cli for docker compose and rails users",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Alejandro Alvarez @alejoreact",
   "bin": {
     "drails": "./bin/run"

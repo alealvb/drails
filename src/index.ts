@@ -26,7 +26,7 @@ class Drails extends Command {
   parseCommand() {
     const { raw } = this.parse(Drails);
     const railsCommand = raw.map(({ input }) => input).join(' ');
-    return `docker-compose run --rm web rails ${railsCommand}`;
+    return `docker-compose exec web rails ${railsCommand}`;
   }
 
   async run() {
